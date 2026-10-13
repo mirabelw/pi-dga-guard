@@ -1,0 +1,338 @@
+{
+  "model": "character_tfidf_logistic_regression",
+  "suffix_rules": "psl-icann+ddns-v1",
+  "parameters": {
+    "C": 20.0,
+    "ngram_range": [
+      1,
+      6
+    ],
+    "max_features": 150000,
+    "vocabulary_size": 150000,
+    "target_validation_fpr": 0.001,
+    "seed": 42
+  },
+  "training_count": 621106,
+  "portable_score_max_abs_difference": 3.586073020200864e-07,
+  "validation": {
+    "count": 26614,
+    "positives": 13322,
+    "benign": 13292,
+    "roc_auc": 0.9891780888416605,
+    "average_precision": 0.9901119439791166,
+    "threshold": 0.995670123099746,
+    "tp": 8056,
+    "fp": 12,
+    "recall": 0.60471400690587,
+    "fpr": 0.0009027986758952753,
+    "precision_on_this_dataset": 0.9985126425384234,
+    "families": {
+      "conficker": {
+        "positives": 553,
+        "detected": 126
+      },
+      "corebot": {
+        "positives": 541,
+        "detected": 483
+      },
+      "cryptolocker": {
+        "positives": 544,
+        "detected": 453
+      },
+      "dircrypt": {
+        "positives": 492,
+        "detected": 365
+      },
+      "emotet": {
+        "positives": 561,
+        "detected": 530
+      },
+      "fobber": {
+        "positives": 543,
+        "detected": 305
+      },
+      "gozi": {
+        "positives": 521,
+        "detected": 193
+      },
+      "kraken": {
+        "positives": 331,
+        "detected": 117
+      },
+      "matsnu": {
+        "positives": 506,
+        "detected": 123
+      },
+      "murofet": {
+        "positives": 543,
+        "detected": 533
+      },
+      "necurs": {
+        "positives": 592,
+        "detected": 415
+      },
+      "nymaim": {
+        "positives": 532,
+        "detected": 14
+      },
+      "padcrypt": {
+        "positives": 516,
+        "detected": 427
+      },
+      "pushdo": {
+        "positives": 537,
+        "detected": 177
+      },
+      "pykspa": {
+        "positives": 567,
+        "detected": 440
+      },
+      "qadars": {
+        "positives": 529,
+        "detected": 439
+      },
+      "ramdo": {
+        "positives": 544,
+        "detected": 486
+      },
+      "ramnit": {
+        "positives": 514,
+        "detected": 392
+      },
+      "ranbyus": {
+        "positives": 557,
+        "detected": 533
+      },
+      "rovnix": {
+        "positives": 534,
+        "detected": 470
+      },
+      "simda": {
+        "positives": 529,
+        "detected": 204
+      },
+      "suppobox": {
+        "positives": 572,
+        "detected": 53
+      },
+      "symmi": {
+        "positives": 598,
+        "detected": 183
+      },
+      "tinba": {
+        "positives": 530,
+        "detected": 425
+      },
+      "vawtrak": {
+        "positives": 536,
+        "detected": 170
+      }
+    },
+    "false_positive_domains": [
+      {
+        "domain": "wnzvrqvfcngpuvvv.com",
+        "score": 0.999999
+      },
+      {
+        "domain": "lymphogramzmbwixwsu.online",
+        "score": 0.999932
+      },
+      {
+        "domain": "zcrqsfq.biz",
+        "score": 0.99931
+      },
+      {
+        "domain": "unweaponedlszawcwv.online",
+        "score": 0.999289
+      },
+      {
+        "domain": "zkxbkhsycretin.online",
+        "score": 0.999001
+      },
+      {
+        "domain": "exscindedmmmqsqv.online",
+        "score": 0.998653
+      },
+      {
+        "domain": "bqiovml.com",
+        "score": 0.998345
+      },
+      {
+        "domain": "xushnudbek.uz",
+        "score": 0.998147
+      },
+      {
+        "domain": "equalnessbhknrw.online",
+        "score": 0.997323
+      },
+      {
+        "domain": "cevapciciqwwgx.online",
+        "score": 0.997155
+      },
+      {
+        "domain": "nckprsn.com",
+        "score": 0.996763
+      },
+      {
+        "domain": "drkissvilmosugyvediiroda.hu",
+        "score": 0.996251
+      }
+    ],
+    "false_positives_truncated": false
+  },
+  "limitations": "The score is not a calibrated probability. Domain-level splitting of known families does not establish unseen-family or live-network performance.",
+  "test": {
+    "count": 26186,
+    "positives": 13227,
+    "benign": 12959,
+    "roc_auc": 0.9898018591157451,
+    "average_precision": 0.9909642667974352,
+    "threshold": 0.995670123099746,
+    "tp": 7959,
+    "fp": 9,
+    "recall": 0.601723746881379,
+    "fpr": 0.0006944980322555753,
+    "precision_on_this_dataset": 0.9988704819277109,
+    "families": {
+      "conficker": {
+        "positives": 533,
+        "detected": 103
+      },
+      "corebot": {
+        "positives": 496,
+        "detected": 425
+      },
+      "cryptolocker": {
+        "positives": 558,
+        "detected": 467
+      },
+      "dircrypt": {
+        "positives": 586,
+        "detected": 467
+      },
+      "emotet": {
+        "positives": 540,
+        "detected": 505
+      },
+      "fobber": {
+        "positives": 501,
+        "detected": 266
+      },
+      "gozi": {
+        "positives": 548,
+        "detected": 201
+      },
+      "kraken": {
+        "positives": 320,
+        "detected": 129
+      },
+      "matsnu": {
+        "positives": 567,
+        "detected": 138
+      },
+      "murofet": {
+        "positives": 521,
+        "detected": 509
+      },
+      "necurs": {
+        "positives": 489,
+        "detected": 381
+      },
+      "nymaim": {
+        "positives": 574,
+        "detected": 11
+      },
+      "padcrypt": {
+        "positives": 515,
+        "detected": 427
+      },
+      "pushdo": {
+        "positives": 552,
+        "detected": 181
+      },
+      "pykspa": {
+        "positives": 599,
+        "detected": 457
+      },
+      "qadars": {
+        "positives": 510,
+        "detected": 425
+      },
+      "ramdo": {
+        "positives": 565,
+        "detected": 502
+      },
+      "ramnit": {
+        "positives": 528,
+        "detected": 385
+      },
+      "ranbyus": {
+        "positives": 563,
+        "detected": 532
+      },
+      "rovnix": {
+        "positives": 504,
+        "detected": 445
+      },
+      "simda": {
+        "positives": 521,
+        "detected": 211
+      },
+      "suppobox": {
+        "positives": 529,
+        "detected": 50
+      },
+      "symmi": {
+        "positives": 533,
+        "detected": 159
+      },
+      "tinba": {
+        "positives": 547,
+        "detected": 426
+      },
+      "vawtrak": {
+        "positives": 528,
+        "detected": 157
+      }
+    },
+    "false_positive_domains": [
+      {
+        "domain": "largenjuxlzdfml.online",
+        "score": 0.999913
+      },
+      {
+        "domain": "zxcvbnmnbvcxz.com",
+        "score": 0.999896
+      },
+      {
+        "domain": "ynpxrz.com",
+        "score": 0.998882
+      },
+      {
+        "domain": "bdzhhjnml.pw",
+        "score": 0.998824
+      },
+      {
+        "domain": "effluencesqxuyt.online",
+        "score": 0.998122
+      },
+      {
+        "domain": "eruditeijrcrsv.online",
+        "score": 0.997527
+      },
+      {
+        "domain": "xbhblg.top",
+        "score": 0.997331
+      },
+      {
+        "domain": "uofqbp.com",
+        "score": 0.996326
+      },
+      {
+        "domain": "jelledgkhzmyjl.online",
+        "score": 0.996214
+      }
+    ],
+    "false_positives_truncated": false
+  }
+}

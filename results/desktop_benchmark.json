@@ -1,0 +1,13 @@
+{
+  "architecture": "x86_64",
+  "kernel": "6.18.44-fc-v37",
+  "python": "3.12.3",
+  "domains": 10000,
+  "scored": 10000,
+  "model_load_seconds": 0.105,
+  "scoring_microseconds_per_domain": 35.77,
+  "domains_per_second": 27959,
+  "model_json_bytes": 4138571,
+  "peak_process_rss_kib_linux": 60804,
+  "note": "Single process run, including Python baseline memory and suffix-list load; excludes SQLite polling, log writes, and concurrent DNS traffic. Repeat on the target Raspberry Pi."
+}

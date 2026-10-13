@@ -1,0 +1,27 @@
+[Unit]
+Description=Pi DGA Guard query monitor
+After=pihole-FTL.service
+Wants=pihole-FTL.service
+
+[Service]
+Type=simple
+# systemd creates a throwaway user; the pihole group lets it read the query DB.
+DynamicUser=yes
+SupplementaryGroups=pihole
+WorkingDirectory=/opt/pi-dga-guard
+ExecStart=/usr/bin/python3 -m dgaguard monitor --state /var/lib/pi-dga-guard/cursor.json --alerts /var/lib/pi-dga-guard/alerts.jsonl
+Restart=on-failure
+RestartSec=5
+# Cursor and alerts live here; they contain browsing metadata.
+StateDirectory=pi-dga-guard
+StateDirectoryMode=0700
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+# For opt-in auto-blocking: add --auto-block --block-threshold ... to ExecStart
+# and put PIHOLE_APP_PASSWORD=... in this root-owned, mode-0600 file.
+EnvironmentFile=-/etc/pi-dga-guard.env
+
+[Install]
+WantedBy=multi-user.target

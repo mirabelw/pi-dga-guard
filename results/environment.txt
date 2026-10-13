@@ -1,0 +1,14 @@
+Evaluation date: 2026-09-29
+Python: 3.12.3
+scikit-learn: 1.8.0, numpy 2.4.4, scipy 1.17.1
+wordfreq: 3.1.1 (linear baseline wordlist only)
+Dataset: chrmor/DGA_domains_dataset/dga_domains_full.csv
+  SHA-256 e8bbe54f180cd127a07abaa3dbddcd843e7b7943dff2f18628619b1bd22e8253
+Suffix rules: psl-icann+ddns-v1 (bundled PSL snapshot; hash in data/*_manifest.json)
+Splits: scripts/prepare_dataset.py --full-train; known seed 83, family seed 73
+  Unseen-family validation families: corebot, gozi, suppobox
+  Unseen-family test families: matsnu, necurs, pykspa
+Model selection: scripts/experiments.py, validation splits only (results/model_selection.json)
+Final comparison: test splits evaluated once (results/test_comparison.json)
+Training machine: x86_64 development environment, not a Raspberry Pi
+The raw dataset and generated wordlist are not included.

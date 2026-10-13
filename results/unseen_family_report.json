@@ -1,0 +1,126 @@
+{
+  "model": "character_tfidf_logistic_regression",
+  "suffix_rules": "psl-icann+ddns-v1",
+  "parameters": {
+    "C": 20.0,
+    "ngram_range": [
+      1,
+      6
+    ],
+    "max_features": 150000,
+    "vocabulary_size": 150000,
+    "target_validation_fpr": 0.001,
+    "seed": 42
+  },
+  "training_count": 566184,
+  "portable_score_max_abs_difference": 4.004303223448247e-07,
+  "validation": {
+    "count": 24943,
+    "positives": 12213,
+    "benign": 12730,
+    "roc_auc": 0.8236221573485918,
+    "average_precision": 0.8485685528929194,
+    "threshold": 0.9975671436485236,
+    "tp": 3298,
+    "fp": 11,
+    "recall": 0.27004012118234666,
+    "fpr": 0.0008641005498821681,
+    "precision_on_this_dataset": 0.9966757328498036,
+    "families": {
+      "corebot": {
+        "positives": 4103,
+        "detected": 3274
+      },
+      "gozi": {
+        "positives": 4068,
+        "detected": 24
+      },
+      "suppobox": {
+        "positives": 4042,
+        "detected": 0
+      }
+    },
+    "false_positive_domains": [
+      {
+        "domain": "wnzvrqvfcngpuvvv.com",
+        "score": 0.999998
+      },
+      {
+        "domain": "ringgitkxpgxeuo.online",
+        "score": 0.999951
+      },
+      {
+        "domain": "gubdadtxwqow.com",
+        "score": 0.999854
+      },
+      {
+        "domain": "beggaryqoazm.online",
+        "score": 0.999844
+      },
+      {
+        "domain": "vejlbuixnknc.com",
+        "score": 0.99963
+      },
+      {
+        "domain": "sluicesrzlvjws.online",
+        "score": 0.999436
+      },
+      {
+        "domain": "exscindedmmmqsqv.online",
+        "score": 0.999047
+      },
+      {
+        "domain": "emeersdebhaeoqk.online",
+        "score": 0.998388
+      },
+      {
+        "domain": "deracinatehxkjblgde.online",
+        "score": 0.998106
+      },
+      {
+        "domain": "zjoxoxprgw.com",
+        "score": 0.997685
+      },
+      {
+        "domain": "lplqyocxmify.com",
+        "score": 0.997572
+      }
+    ],
+    "false_positives_truncated": false
+  },
+  "limitations": "The score is not a calibrated probability. Domain-level splitting of known families does not establish unseen-family or live-network performance.",
+  "test": {
+    "count": 24776,
+    "positives": 12047,
+    "benign": 12729,
+    "roc_auc": 0.9291410120636587,
+    "average_precision": 0.9378374020043793,
+    "threshold": 0.9975671436485236,
+    "tp": 4014,
+    "fp": 1,
+    "recall": 0.3331949863036441,
+    "fpr": 7.85607667530835e-05,
+    "precision_on_this_dataset": 0.9997509339975094,
+    "families": {
+      "matsnu": {
+        "positives": 4057,
+        "detected": 10
+      },
+      "necurs": {
+        "positives": 3980,
+        "detected": 2748
+      },
+      "pykspa": {
+        "positives": 4010,
+        "detected": 1256
+      }
+    },
+    "false_positive_domains": [
+      {
+        "domain": "squamulosetqoqbrrs.online",
+        "score": 0.999886
+      }
+    ],
+    "false_positives_truncated": false
+  }
+}

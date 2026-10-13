@@ -1,0 +1,151 @@
+{
+  "protocol": "Same validation and test splits for every row (prepared with --full-train). Thresholds set on validation for 0.1% benign false positives, then applied once to test. Baselines train on the standard training split; the new model on the full training split.",
+  "known_family": {
+    "linear_7_feature_int8": {
+      "roc_auc": 0.9059,
+      "average_precision": 0.9259,
+      "detected": "2185/13227",
+      "benign_flagged": "2/12959",
+      "recall": 0.1652,
+      "fpr": 0.00015,
+      "families": {
+        "conficker": "5/533",
+        "corebot": "158/496",
+        "cryptolocker": "106/558",
+        "dircrypt": "211/586",
+        "emotet": "170/540",
+        "fobber": "36/501",
+        "gozi": "0/548",
+        "kraken": "11/320",
+        "matsnu": "0/567",
+        "murofet": "403/521",
+        "necurs": "172/489",
+        "nymaim": "0/574",
+        "padcrypt": "35/515",
+        "pushdo": "1/552",
+        "pykspa": "17/599",
+        "qadars": "15/510",
+        "ramdo": "231/565",
+        "ramnit": "118/528",
+        "ranbyus": "245/563",
+        "rovnix": "188/504",
+        "simda": "0/521",
+        "suppobox": "0/529",
+        "symmi": "3/533",
+        "tinba": "60/547",
+        "vawtrak": "0/528"
+      }
+    },
+    "previous_char_2_5_40k": {
+      "roc_auc": 0.9761,
+      "average_precision": 0.9793,
+      "detected": "6851/13227",
+      "benign_flagged": "9/12959",
+      "recall": 0.518,
+      "fpr": 0.00069,
+      "families": {
+        "conficker": "63/533",
+        "corebot": "422/496",
+        "cryptolocker": "396/558",
+        "dircrypt": "403/586",
+        "emotet": "453/540",
+        "fobber": "207/501",
+        "gozi": "144/548",
+        "kraken": "102/320",
+        "matsnu": "108/567",
+        "murofet": "475/521",
+        "necurs": "343/489",
+        "nymaim": "7/574",
+        "padcrypt": "362/515",
+        "pushdo": "180/552",
+        "pykspa": "426/599",
+        "qadars": "308/510",
+        "ramdo": "446/565",
+        "ramnit": "331/528",
+        "ranbyus": "481/563",
+        "rovnix": "358/504",
+        "simda": "172/521",
+        "suppobox": "17/529",
+        "symmi": "148/533",
+        "tinba": "339/547",
+        "vawtrak": "160/528"
+      }
+    },
+    "new_char_boundary_1_6_150k_full_train": {
+      "roc_auc": 0.9898,
+      "average_precision": 0.991,
+      "detected": "7959/13227",
+      "benign_flagged": "9/12959",
+      "recall": 0.6017,
+      "fpr": 0.00069,
+      "families": {
+        "conficker": "103/533",
+        "corebot": "425/496",
+        "cryptolocker": "467/558",
+        "dircrypt": "467/586",
+        "emotet": "505/540",
+        "fobber": "266/501",
+        "gozi": "201/548",
+        "kraken": "129/320",
+        "matsnu": "138/567",
+        "murofet": "509/521",
+        "necurs": "381/489",
+        "nymaim": "11/574",
+        "padcrypt": "427/515",
+        "pushdo": "181/552",
+        "pykspa": "457/599",
+        "qadars": "425/510",
+        "ramdo": "502/565",
+        "ramnit": "385/528",
+        "ranbyus": "532/563",
+        "rovnix": "445/504",
+        "simda": "211/521",
+        "suppobox": "50/529",
+        "symmi": "159/533",
+        "tinba": "426/547",
+        "vawtrak": "157/528"
+      }
+    }
+  },
+  "unseen_family": {
+    "linear_7_feature_int8": {
+      "roc_auc": 0.9429,
+      "average_precision": 0.9384,
+      "detected": "2629/12047",
+      "benign_flagged": "16/12729",
+      "recall": 0.2182,
+      "fpr": 0.00126,
+      "families": {
+        "matsnu": "0/4057",
+        "necurs": "1966/3980",
+        "pykspa": "663/4010"
+      }
+    },
+    "previous_char_2_5_40k": {
+      "roc_auc": 0.9209,
+      "average_precision": 0.9281,
+      "detected": "3489/12047",
+      "benign_flagged": "3/12729",
+      "recall": 0.2896,
+      "fpr": 0.00024,
+      "families": {
+        "matsnu": "6/4057",
+        "necurs": "2398/3980",
+        "pykspa": "1085/4010"
+      }
+    },
+    "new_char_boundary_1_6_150k_full_train": {
+      "roc_auc": 0.9291,
+      "average_precision": 0.9378,
+      "detected": "4014/12047",
+      "benign_flagged": "1/12729",
+      "recall": 0.3332,
+      "fpr": 8e-05,
+      "families": {
+        "matsnu": "10/4057",
+        "necurs": "2748/3980",
+        "pykspa": "1256/4010"
+      }
+    }
+  }
+}

@@ -1,0 +1,412 @@
+{
+  "linear_7_handcrafted_only": {
+    "config": {
+      "char": false,
+      "handcrafted": true,
+      "C": 1.0
+    },
+    "family": {
+      "recall_at_0.1pct_fpr": 0.1396,
+      "average_precision": 0.7826,
+      "per_family": {
+        "corebot": "1705/4103",
+        "gozi": "0/4068",
+        "suppobox": "0/4042"
+      }
+    },
+    "known": {
+      "recall_at_0.1pct_fpr": 0.1615,
+      "average_precision": 0.925
+    }
+  },
+  "char_2_5_C20 (previous default)": {
+    "config": {},
+    "family": {
+      "recall_at_0.1pct_fpr": 0.2092,
+      "average_precision": 0.8264,
+      "per_family": {
+        "corebot": "2537/4103",
+        "gozi": "18/4068",
+        "suppobox": "0/4042"
+      }
+    },
+    "known": {
+      "recall_at_0.1pct_fpr": 0.5181,
+      "average_precision": 0.9781
+    }
+  },
+  "+boundary": {
+    "config": {
+      "boundary": true
+    },
+    "family": {
+      "recall_at_0.1pct_fpr": 0.2152,
+      "average_precision": 0.8188,
+      "per_family": {
+        "corebot": "2614/4103",
+        "gozi": "14/4068",
+        "suppobox": "0/4042"
+      }
+    },
+    "known": {
+      "recall_at_0.1pct_fpr": 0.5092,
+      "average_precision": 0.9821
+    }
+  },
+  "+boundary+sublinear": {
+    "config": {
+      "boundary": true,
+      "sublinear": true
+    },
+    "family": {
+      "recall_at_0.1pct_fpr": 0.2006,
+      "average_precision": 0.8217,
+      "per_family": {
+        "corebot": "2436/4103",
+        "gozi": "14/4068",
+        "suppobox": "0/4042"
+      }
+    },
+    "known": {
+      "recall_at_0.1pct_fpr": 0.5272,
+      "average_precision": 0.9821
+    }
+  },
+  "+boundary C=5": {
+    "config": {
+      "boundary": true,
+      "C": 5.0
+    },
+    "family": {
+      "recall_at_0.1pct_fpr": 0.2175,
+      "average_precision": 0.8148,
+      "per_family": {
+        "corebot": "2645/4103",
+        "gozi": "11/4068",
+        "suppobox": "0/4042"
+      }
+    },
+    "known": {
+      "recall_at_0.1pct_fpr": 0.5336,
+      "average_precision": 0.9822
+    }
+  },
+  "+boundary C=100": {
+    "config": {
+      "boundary": true,
+      "C": 100.0
+    },
+    "family": {
+      "recall_at_0.1pct_fpr": 0.2168,
+      "average_precision": 0.8238,
+      "per_family": {
+        "corebot": "2635/4103",
+        "gozi": "13/4068",
+        "suppobox": "0/4042"
+      }
+    },
+    "known": {
+      "recall_at_0.1pct_fpr": 0.5071,
+      "average_precision": 0.9804
+    }
+  },
+  "+boundary ngrams 1-5": {
+    "config": {
+      "boundary": true,
+      "ngrams": [
+        1,
+        5
+      ]
+    },
+    "family": {
+      "recall_at_0.1pct_fpr": 0.2549,
+      "average_precision": 0.8311,
+      "per_family": {
+        "corebot": "3089/4103",
+        "gozi": "24/4068",
+        "suppobox": "0/4042"
+      }
+    },
+    "known": {
+      "recall_at_0.1pct_fpr": 0.5421,
+      "average_precision": 0.9823
+    }
+  },
+  "+boundary ngrams 2-6": {
+    "config": {
+      "boundary": true,
+      "ngrams": [
+        2,
+        6
+      ]
+    },
+    "family": {
+      "recall_at_0.1pct_fpr": 0.2237,
+      "average_precision": 0.8252,
+      "per_family": {
+        "corebot": "2713/4103",
+        "gozi": "19/4068",
+        "suppobox": "0/4042"
+      }
+    },
+    "known": {
+      "recall_at_0.1pct_fpr": 0.5435,
+      "average_precision": 0.982
+    }
+  },
+  "+boundary ngrams 3-6": {
+    "config": {
+      "boundary": true,
+      "ngrams": [
+        3,
+        6
+      ]
+    },
+    "family": {
+      "recall_at_0.1pct_fpr": 0.0741,
+      "average_precision": 0.7743,
+      "per_family": {
+        "corebot": "899/4103",
+        "gozi": "6/4068",
+        "suppobox": "0/4042"
+      }
+    },
+    "known": {
+      "recall_at_0.1pct_fpr": 0.3141,
+      "average_precision": 0.9742
+    }
+  },
+  "+boundary 150k features": {
+    "config": {
+      "boundary": true,
+      "max_features": 150000
+    },
+    "family": {
+      "recall_at_0.1pct_fpr": 0.2167,
+      "average_precision": 0.8199,
+      "per_family": {
+        "corebot": "2636/4103",
+        "gozi": "11/4068",
+        "suppobox": "0/4042"
+      }
+    },
+    "known": {
+      "recall_at_0.1pct_fpr": 0.534,
+      "average_precision": 0.9805
+    }
+  },
+  "+boundary+handcrafted": {
+    "config": {
+      "boundary": true,
+      "handcrafted": true
+    },
+    "family": {
+      "recall_at_0.1pct_fpr": 0.2196,
+      "average_precision": 0.8267,
+      "per_family": {
+        "corebot": "2664/4103",
+        "gozi": "18/4068",
+        "suppobox": "0/4042"
+      }
+    },
+    "known": {
+      "recall_at_0.1pct_fpr": 0.5409,
+      "average_precision": 0.9828
+    }
+  },
+  "+boundary+handcrafted(x0.3)": {
+    "config": {
+      "boundary": true,
+      "handcrafted": true,
+      "handcrafted_weight": 0.3
+    },
+    "family": {
+      "recall_at_0.1pct_fpr": 0.2257,
+      "average_precision": 0.8259,
+      "per_family": {
+        "corebot": "2739/4103",
+        "gozi": "17/4068",
+        "suppobox": "0/4042"
+      }
+    },
+    "known": {
+      "recall_at_0.1pct_fpr": 0.5492,
+      "average_precision": 0.9829
+    }
+  },
+  "+boundary+suffix": {
+    "config": {
+      "boundary": true,
+      "suffix": true
+    },
+    "family": {
+      "recall_at_0.1pct_fpr": 0.3356,
+      "average_precision": 0.8295,
+      "per_family": {
+        "corebot": "4095/4103",
+        "gozi": "4/4068",
+        "suppobox": "0/4042"
+      }
+    },
+    "known": {
+      "recall_at_0.1pct_fpr": 0.706,
+      "average_precision": 0.9909
+    }
+  },
+  "+boundary ngrams 1-4": {
+    "config": {
+      "boundary": true,
+      "ngrams": [
+        1,
+        4
+      ]
+    },
+    "family": {
+      "recall_at_0.1pct_fpr": 0.2618,
+      "average_precision": 0.8289,
+      "per_family": {
+        "corebot": "3175/4103",
+        "gozi": "22/4068",
+        "suppobox": "0/4042"
+      }
+    },
+    "known": {
+      "recall_at_0.1pct_fpr": 0.53,
+      "average_precision": 0.9811
+    }
+  },
+  "+boundary ngrams 1-6": {
+    "config": {
+      "boundary": true,
+      "ngrams": [
+        1,
+        6
+      ]
+    },
+    "family": {
+      "recall_at_0.1pct_fpr": 0.2718,
+      "average_precision": 0.8406,
+      "per_family": {
+        "corebot": "3285/4103",
+        "gozi": "35/4068",
+        "suppobox": "0/4042"
+      }
+    },
+    "known": {
+      "recall_at_0.1pct_fpr": 0.5269,
+      "average_precision": 0.9823
+    }
+  },
+  "+boundary ngrams 1-5 C=5": {
+    "config": {
+      "boundary": true,
+      "ngrams": [
+        1,
+        5
+      ],
+      "C": 5.0
+    },
+    "family": {
+      "recall_at_0.1pct_fpr": 0.2664,
+      "average_precision": 0.8311,
+      "per_family": {
+        "corebot": "3232/4103",
+        "gozi": "21/4068",
+        "suppobox": "0/4042"
+      }
+    },
+    "known": {
+      "recall_at_0.1pct_fpr": 0.5256,
+      "average_precision": 0.9821
+    }
+  },
+  "+boundary ngrams 1-5 C=100": {
+    "config": {
+      "boundary": true,
+      "ngrams": [
+        1,
+        5
+      ],
+      "C": 100.0
+    },
+    "family": {
+      "recall_at_0.1pct_fpr": 0.2798,
+      "average_precision": 0.8316,
+      "per_family": {
+        "corebot": "3390/4103",
+        "gozi": "27/4068",
+        "suppobox": "0/4042"
+      }
+    },
+    "known": {
+      "recall_at_0.1pct_fpr": 0.5161,
+      "average_precision": 0.9808
+    }
+  },
+  "ngrams 1-5 no boundary": {
+    "config": {
+      "ngrams": [
+        1,
+        5
+      ]
+    },
+    "family": {
+      "recall_at_0.1pct_fpr": 0.2307,
+      "average_precision": 0.8334,
+      "per_family": {
+        "corebot": "2797/4103",
+        "gozi": "20/4068",
+        "suppobox": "0/4042"
+      }
+    },
+    "known": {
+      "recall_at_0.1pct_fpr": 0.4761,
+      "average_precision": 0.9782
+    }
+  },
+  "+boundary ngrams 1-6 FULL TRAIN": {
+    "config": {
+      "boundary": true,
+      "ngrams": [
+        1,
+        6
+      ]
+    },
+    "family": {
+      "recall_at_0.1pct_fpr": 0.2478,
+      "average_precision": 0.8405,
+      "per_family": {
+        "corebot": "3007/4103",
+        "gozi": "19/4068",
+        "suppobox": "0/4042"
+      }
+    },
+    "known": {
+      "recall_at_0.1pct_fpr": 0.5757,
+      "average_precision": 0.986
+    }
+  },
+  "+boundary ngrams 1-6 FULL TRAIN 150k": {
+    "config": {
+      "boundary": true,
+      "ngrams": [
+        1,
+        6
+      ],
+      "max_features": 150000
+    },
+    "known": {
+      "recall_at_0.1pct_fpr": 0.6047,
+      "average_precision": 0.9901
+    },
+    "family": {
+      "recall_at_0.1pct_fpr": 0.27,
+      "average_precision": 0.8486,
+      "per_family": {
+        "corebot": "3274/4103",
+        "gozi": "24/4068",
+        "suppobox": "0/4042"
+      }
+    }
+  }
+}

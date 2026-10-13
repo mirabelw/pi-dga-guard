@@ -1,0 +1,2 @@
+-r requirements-train.txt
+wordfreq==3.1.1

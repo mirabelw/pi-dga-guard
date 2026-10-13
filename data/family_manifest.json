@@ -1,0 +1,68 @@
+{
+  "source_url": "https://github.com/chrmor/DGA_domains_dataset/blob/master/dga_domains_full.csv",
+  "source_sha256": "e8bbe54f180cd127a07abaa3dbddcd843e7b7943dff2f18628619b1bd22e8253",
+  "psl_sha256": "257b298daca42f6d8ec964e238c2a55518e14f09d3117917ec8acee6f188503e",
+  "mode": "family",
+  "seed": 73,
+  "full_train": true,
+  "validation_families": [
+    "corebot",
+    "gozi",
+    "suppobox"
+  ],
+  "test_families": [
+    "matsnu",
+    "necurs",
+    "pykspa"
+  ],
+  "removed_validation_token_collisions": 633,
+  "removed_test_token_collisions": 630,
+  "counts": {
+    "train": {
+      "total": 566184,
+      "benign": 309684,
+      "dga": 256500,
+      "dga_families": {
+        "conficker": 13500,
+        "cryptolocker": 13500,
+        "dircrypt": 13500,
+        "emotet": 13500,
+        "fobber": 13500,
+        "kraken": 13500,
+        "murofet": 13500,
+        "nymaim": 13500,
+        "padcrypt": 13500,
+        "pushdo": 13500,
+        "qadars": 13500,
+        "ramdo": 13500,
+        "ramnit": 13500,
+        "ranbyus": 13500,
+        "rovnix": 13500,
+        "simda": 13500,
+        "symmi": 13500,
+        "tinba": 13500,
+        "vawtrak": 13500
+      }
+    },
+    "validation": {
+      "total": 24943,
+      "benign": 12730,
+      "dga": 12213,
+      "dga_families": {
+        "corebot": 4103,
+        "gozi": 4068,
+        "suppobox": 4042
+      }
+    },
+    "test": {
+      "total": 24776,
+      "benign": 12729,
+      "dga": 12047,
+      "dga_families": {
+        "matsnu": 4057,
+        "necurs": 3980,
+        "pykspa": 4010
+      }
+    }
+  }
+}
